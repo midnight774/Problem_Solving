@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/*
+백준 1005 ACM Craft
+풀이 방법 : 위상 정렬
+*/
+
+
 int InCnt[1001] = {};
 int DP[1001] = {};
 vector<int> vecTime;
