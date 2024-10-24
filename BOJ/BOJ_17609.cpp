@@ -7,7 +7,7 @@ BOJ 17609 회문
 풀이 방법 : 투 포인터
 */
 
-bool IsCom(int Left, int Right, const string& str)
+bool IsSim(int Left, int Right, const string& str)
 {
 	bool Enable = true;
 	int Mid = (Right + Left) / 2;
@@ -51,13 +51,13 @@ int main()
 			{
 				Enable = false;
 
-				if (IsCom(i, Length - i - 2, str))
+				if (IsSim(i, Length - i - 2, str))
 				{
 					Cnt = 1;
 					break;
 				}
 
-				if (IsCom(i + 1, Length - i - 1, str))
+				if (IsSim(i + 1, Length - i - 1, str))
 				{
 					Cnt = 1;
 					break;
