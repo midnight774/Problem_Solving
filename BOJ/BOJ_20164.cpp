@@ -1,16 +1,17 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <limits.h>
 
 using namespace std;
 
 /*
 BOJ 20164 홀수 홀릭 호석
-풀이 방법 : 재귀
+풀이 방법 : 
 */
 
 string Input;
-int Min = 15;
+int Min = INT_MAX;
 int Max = 0;
 
 void CheckOdd(string Input, int Cnt)
@@ -64,7 +65,6 @@ int main()
 
 	cin >> Input;
 	CheckOdd(Input, 0);
-
 	cout << Min << ' ' << Max;
 
 }
