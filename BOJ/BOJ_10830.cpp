@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
-BOJ 2740 행렬 곱셈
+BOJ 10830 행렬 제곱
 풀이 방법 : 분할 정복
 
 A[l][i][j] = 행렬 A를 2^l 번 곱한 결과
