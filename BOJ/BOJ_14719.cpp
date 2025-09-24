@@ -35,7 +35,7 @@ int main()
 		if (CurMax < vecHeight[i])
 		{
 			for (int j = MaxIdx + 1; j < i; ++j)
-				Ans += max(0, min(CurMax, vecHeight[i]) - vecHeight[j]);
+				Ans += CurMax - vecHeight[j];
 
 			CurMax = vecHeight[i];
 			MaxIdx = i;
@@ -49,7 +49,7 @@ int main()
 		if (CurMax <= vecHeight[i])
 		{
 			for (int j = MaxIdx - 1; j > i; --j)
-				Ans += max(0, min(CurMax, vecHeight[i]) - vecHeight[j]);
+				Ans += CurMax - vecHeight[j];
 
 			CurMax = vecHeight[i];
 			MaxIdx = i;
